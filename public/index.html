@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع رسائل إلكترونية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #333; /* خلفية داكنة */
+            color: #fff;
+        }
+        .container {
+            background-color: #2b2b2b; /* خلفية الصندوق داكنة */
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffcccc; 
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        .chat-area {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #555;
+            border-radius: 10px;
+            min-height: 150px;
+            background-color: #3e3e3e;
+            text-align: right;
+            color: #fff;
+        }
+        textarea {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #3e3e3e;
+            color: #fff;
+            resize: none;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        /* لإظهار محتوى نصي بسيط يقلد الرسائل الظاهرة في الفيديو */
+        .message-fake {
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic">🐼</div> 
+        <h3>هلا إسراء</h3>
+        <p>خير علي صاير شي..؟!</p>
+
+        <div class="chat-area" id="message-display">
+            <div class="message-fake">**هلوووو**</div>
+            <div class="message-fake">**عندي سؤال الج/لك**</div>
+            <div class="message-fake">**تحبيني؟** (مثال على خيارات الفيديو)</div>
+        </div>
+
+        <textarea placeholder="اكتب رسالتك هنا..." rows="3"></textarea>
+        <button>إرسال (غير فعال حالياً)</button>
+    </div>
+</body>
+</html>
